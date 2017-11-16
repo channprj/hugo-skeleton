@@ -3,7 +3,7 @@ This is [Hugo](//gohugo.io/) theme for developers. Use it to make your own theme
 
 
 ## Installation
-```
+```sh
 $ git submodule add https://github.com/channprj/hugo-skeleton themes/skeleton
 # This will add repository as a submodule to your site’s repository. Now, you will have to pull the theme.
 $ git submodule init
@@ -14,7 +14,7 @@ $ git submodule update
 ## Configuration
 Open `config.toml` in the base of the Hugo site and ensure the theme option is set to `skeleton`.
 
-```
+```toml
 theme = "skeleton"
 ```
 
