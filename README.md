@@ -3,17 +3,22 @@ This is [Hugo](//gohugo.io/) theme for developers. Use it to make your own theme
 
 
 ## Installation
-Run as below
-
 ```
-$ git clone https://github.com/channprj/hugo-skeleton themes/skeleton
+$ git submodule add https://github.com/channprj/hugo-skeleton themes/skeleton
+# This will add repository as a submodule to your site’s repository. Now, you will have to pull the theme.
+$ git submodule init
+$ git submodule update
+# That’s all, Skeleton is ready to be used.
 ```
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `skeleton`.
+## Configuration
+Open `config.toml` in the base of the Hugo site and ensure the theme option is set to `skeleton`.
 
 ```
 theme = "skeleton"
 ```
+
+Skeleton uses `TOML` as default, but you can also use `YAML` or `JSON`. If you need more information, [Configuration Guide](https://gohugo.io/getting-started/configuration/) would be helpful.
 
 For more information, Read the official [Setup Guide](https://gohugo.io/overview/installing/) of Hugo.
 
